@@ -23,11 +23,11 @@ spec:
             protocol: TCP
           env:
             - name: CONTAINER_COLOR
-              value: red
+              value: pink
             - name: TITLE
               value: Hello Rancher              
             - name: PETS
-              value: cows   
+              value: chameleons   
           readinessProbe:
             httpGet:
               port: web
