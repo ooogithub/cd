@@ -1,4 +1,4 @@
-apiVersion: apps/v1
+pinkapiVersion: apps/v1
 kind: Deployment
 metadata:
   name: hello-rancher
@@ -23,7 +23,7 @@ spec:
             protocol: TCP
           env:
             - name: CONTAINER_COLOR
-              value: red
+              value: pink
             - name: TITLE
               value: Hello Rancher              
             - name: PETS
