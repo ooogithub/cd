@@ -1,4 +1,4 @@
-pinkapiVersion: apps/v1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: hello-rancher
@@ -27,7 +27,7 @@ spec:
             - name: TITLE
               value: Hello Rancher              
             - name: PETS
-              value: whitecows
+              value: whitecows   
           readinessProbe:
             httpGet:
               port: web
