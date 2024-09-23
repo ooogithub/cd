@@ -4,7 +4,7 @@ metadata:
   name: hello-rancher
   namespace: hello-rancher
 spec:
-  replicas: 4
+  replicas: 3
   selector:
     matchLabels:
       app: hello-rancher
@@ -25,9 +25,9 @@ spec:
             - name: CONTAINER_COLOR
               value: teal
             - name: TITLE
-              value: Hello Rancher
+              value: Hello Rancher              
             - name: PETS
-              value: cowmeleons
+              value: whitecows   
           readinessProbe:
             httpGet:
               port: web
