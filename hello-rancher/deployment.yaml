@@ -4,7 +4,7 @@ metadata:
   name: hello-rancher
   namespace: hello-rancher
 spec:
-  replicas: 5
+  replicas: 8
   selector:
     matchLabels:
       app: hello-rancher
@@ -23,7 +23,7 @@ spec:
             protocol: TCP
           env:
             - name: CONTAINER_COLOR
-              value: blue
+              value: yellow
             - name: TITLE
               value: Hello Rancher              
             - name: PETS
